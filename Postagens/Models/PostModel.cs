@@ -1,15 +1,16 @@
-namespace Postagens.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class PostModel : ContentPage
+namespace Postagens.Models
 {
-	public PostModel()
-	{
-		Content = new VerticalStackLayout
-		{
-			Children = {
-				new Label { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, Text = "Welcome to .NET MAUI!"
-				}
-			}
-		};
-	}
+    public class PostModel
+    {
+        public int UserId;
+        public int Id;
+        public string Title;
+        public string Body;
+    }
 }

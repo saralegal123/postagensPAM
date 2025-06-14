@@ -5,9 +5,9 @@
              Title="PostView">
     <VerticalStackLayout>
         <Label 
-            Text="Titulo"
+            Text="{Binding Titulo}"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"/>    
 
         <Entry
             Text="Titulo"
@@ -15,6 +15,6 @@
 
         <Button
             Text="Enviar"
-            Command="{Binding EnviarCommand}"/>
+            Command="{Binding DisplayPostsCommand}"/>
     </VerticalStackLayout>
 </ContentPage>
